@@ -27,7 +27,7 @@
             text-align: center;
             padding: 10px 0;
             width: 100%;
-            position: static;
+            position: absolute;
             bottom: 0;
         }
 
@@ -186,19 +186,19 @@
                     carpalTunnelPredictionValue.textContent = predicted_value;
 
                     const averageRainValue = document.querySelector('#average-rain-value');
-                    averageRainValue.textContent = avg_rain;
+                    averageRainValue.textContent = avg_rain + ' inches (Past 12 months)';
                     const averageSoilMoisture = document.querySelector('#average-soil-moisture-value');
-                    averageSoilMoisture.textContent = avg_soil_moisture;
+                    averageSoilMoisture.textContent = avg_soil_moisture + ' inches (Past 12 months)';
                     const averageWaterProximity = document.querySelector('#average-water-proximity-value');
-                    averageWaterProximity.textContent = avg_water_prox;
+                    averageWaterProximity.textContent = avg_water_prox + ' miles';
                     const elevationValue = document.querySelector('#elevation-value');
-                    elevationValue.textContent = elevation;
+                    elevationValue.textContent = elevation + ' ft';
                     const maxRainValue = document.querySelector('#max-rain-value');
-                    maxRainValue.textContent = max_rain;
+                    maxRainValue.textContent = max_rain + ' inches (Past 12 months)';
                     const populationValue = document.querySelector('#population-value');
-                    populationValue.textContent = population;
+                    populationValue.textContent = Number(population) * 10000;
                     const precipitationValue = document.querySelector('#precipitation-value');
-                    precipitationValue.textContent = precipitation;
+                    precipitationValue.textContent = precipitation + ' inches (Past 7 days)';
 
                     console.log({...value.data});
                     loader.classList.add('hidden');

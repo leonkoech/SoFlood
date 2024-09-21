@@ -42,14 +42,13 @@ Enter your address and the flood results will be displayed on a seperate page.
 ## Meet-The-Team
 The team members that contributed to this project are: 
 
-![Leon Kipkoech](./static/images/Leon.png) [`Leon Kipkoech`](https://github.com/leonkoech)
+![Leon Kipkoech](./static/images/Leon.png) [`Leon Kipkoech`](leon.html)
 
-![Elvis Hernandez](./static/images/Elvis.png) [`Elvis Hernandez`](https://github.com/ElvisHernandez)
+![Elvis Hernandez](./static/images/Elvis.png) [`Elvis Hernandez`](elvis.html)
 
-![Henrique Lopes](./static/images/Henrique.png) [`Henrique Lopes`](https://github.com/hcmlopes)
+![Henrique Lopes](./static/images/Henrique.png) [`Henrique Lopes`](henrique.html)
 
-![Tina Humphrey](./static/images/Tina.png) [`Tina Humphrey`](https://github.com/humphreyt12)
-
+![Tina Humphrey](./static/images/Tina.png) [`Tina Humphrey`](tina.html)
 
 ## License 
 This project uses the ISC License.

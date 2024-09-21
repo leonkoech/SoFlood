@@ -10,7 +10,7 @@ def get_geocode_data():
 
     response = {
         "error": None, 
-        "data": None
+        "data": {}
     }
     status_code = 200
 
@@ -21,7 +21,14 @@ def get_geocode_data():
         latlng = None
         if results:
             latlng = results[0]["geometry"]["location"]
-            response["data"] = latlng
+            response["data"]["lat"] = latlng["lat"]
+            response["data"]["lng"] = latlng["lng"]
+            address_components = results[0]["address_components"]
+
+            for address_component in address_components:
+                if "administrative_area_level_1" in address_component["types"]:
+                    response["data"]["state_code"] = address_component["short_name"]
+
 
     except Exception as e:
         response["error"] = e

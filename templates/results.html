@@ -15,7 +15,7 @@
         html,
         body {
             font-family: "Playfair Display", serif;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -27,8 +27,6 @@
             text-align: center;
             padding: 10px 0;
             width: 100%;
-            position: absolute;
-            bottom: 0;
         }
 
         /* Always underline the Carpal Tunnel Team link */
@@ -52,12 +50,12 @@
     </a>
 
 
-    <div id="loader" class="flex h-full justify-center scale-[2]">
+    <div id="loader" class="flex justify-center scale-[2] flex-1">
         <span class="loading loading-spinner loading-lg"></span>
     </div>
 
     <!-- Main Content Section -->
-    <main id="main-content" class="mx-[3rem] hidden">
+    <main id="main-content" class="mx-[3rem] hidden flex-1">
         <div class="flex justify-center gap-[2rem] mt-[2rem] max-w-[50%] mx-auto">
             <!--<div class="stats shadow w-[25%] p-4">-->
             <div class="stat">

@@ -27,7 +27,7 @@
             text-align: center;
             padding: 10px 0;
             width: 100%;
-            position: absolute;
+            position: static;
             bottom: 0;
         }
 
@@ -51,8 +51,13 @@
             style="float: left; margin-top: 20px; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
     </a>
 
+
+    <div id="loader" class="flex h-full justify-center scale-[2]">
+        <span class="loading loading-spinner loading-lg"></span>
+    </div>
+
     <!-- Main Content Section -->
-    <main class="mx-[3rem]">
+    <main id="main-content" class="mx-[3rem] hidden">
         <div class="flex justify-center gap-[2rem] mt-[2rem]">
             <div class="stats shadow w-[25%]">
                 <div class="stat">
@@ -64,7 +69,7 @@
                         <!--</svg>-->
                     </div>
                     <div class="stat-title">FEMA Score</div>
-                    <div class="stat-value text-center">7</div>
+                    <div id="fema-prediction-value" class="stat-value text-center"></div>
                 </div>
             </div>
             <div class="stats shadow w-[25%]">
@@ -77,7 +82,7 @@
                         <!--</svg>-->
                     </div>
                     <div class="stat-title">Carpal Tunnel Score</div>
-                    <div class="stat-value text-center">4</div>
+                    <div id="carpal-tunnel-prediction-value" class="stat-value text-center"></div>
                 </div>
             </div>
         </div>
@@ -85,19 +90,55 @@
         <div class="flex items-center gap-[1rem] flex-col">
             <div class="collapse collapse-arrow bg-base-200 mt-[3rem] w-[50%]">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">hello</div>
+                <div class="collapse-title text-xl font-medium">Average Rain</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p id="average-rain-value"></p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 w-[50%]">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-xl font-medium">Average Soil Moisture</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p id="average-soil-moisture-value"></p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 w-[50%]">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Average Water Proximity</div>
+                <div class="collapse-content">
+                    <p id="average-water-proximity-value"></p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 w-[50%]">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Elevation</div>
+                <div class="collapse-content">
+                    <p id="elevation-value"></p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 w-[50%]">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Max Rain</div>
+                <div class="collapse-content">
+                    <p id="max-rain-value"></p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 w-[50%]">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Population</div>
+                <div class="collapse-content">
+                    <p id="population-value"></p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 w-[50%]">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Precipitation</div>
+                <div class="collapse-content">
+                    <p id="precipitation-value"></p>
                 </div>
             </div>
         </div>
+
 
     </main>
 
@@ -123,7 +164,45 @@
             console.log({lat, lng});
             fetch(`http://localhost:5000/make_flood_prediction?zip=${zip}&lat=${lat}&long=${lng}`).then((val) => {
                 val.json().then((value) => {
-                    console.log({value});
+
+                    const loader = document.querySelector('#loader');
+                    const mainContent = document.querySelector('#main-content');
+                    const femaPredictionValue = document.querySelector('#fema-prediction-value');
+                    const carpalTunnelPredictionValue = document.querySelector('#carpal-tunnel-prediction-value');
+
+                    const femaPrediction = value.data["FEMA prediction"];
+                    const {
+                        predicted_value,
+                        avg_rain,
+                        avg_soil_moisture,
+                        avg_water_prox,
+                        elevation,
+                        max_rain,
+                        population,
+                        precipitation,
+                    } = value.data;
+
+                    femaPredictionValue.textContent = femaPrediction;
+                    carpalTunnelPredictionValue.textContent = predicted_value;
+
+                    const averageRainValue = document.querySelector('#average-rain-value');
+                    averageRainValue.textContent = avg_rain;
+                    const averageSoilMoisture = document.querySelector('#average-soil-moisture-value');
+                    averageSoilMoisture.textContent = avg_soil_moisture;
+                    const averageWaterProximity = document.querySelector('#average-water-proximity-value');
+                    averageWaterProximity.textContent = avg_water_prox;
+                    const elevationValue = document.querySelector('#elevation-value');
+                    elevationValue.textContent = elevation;
+                    const maxRainValue = document.querySelector('#max-rain-value');
+                    maxRainValue.textContent = max_rain;
+                    const populationValue = document.querySelector('#population-value');
+                    populationValue.textContent = population;
+                    const precipitationValue = document.querySelector('#precipitation-value');
+                    precipitationValue.textContent = precipitation;
+
+                    console.log({...value.data});
+                    loader.classList.add('hidden');
+                    mainContent.classList.remove('hidden');
                 })
             })
         });

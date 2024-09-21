@@ -9,6 +9,10 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/results')
+def results():
+    return render_template('results.html')
+
 # this is an example of a get request
 #  go to this link to see: http://127.0.0.1:5000/get_test
 @app.route('/get_test',  methods=['GET'])

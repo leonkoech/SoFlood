@@ -21,10 +21,8 @@ function initAutocomplete() {
     var long = place.geometry.location.lng()
     var zip = ""
 
-
-
-    console.log(place.geometry.location.lat());
-    console.log(place.geometry.location.lng());
+    //console.log(place.geometry.location.lat());
+    //console.log(place.geometry.location.lng());
     for (let address_component of place.address_components) {
       if (address_component["types"]?.includes("postal_code")) {
         zip = address_component["short_name"]
@@ -37,16 +35,6 @@ function initAutocomplete() {
 
     const submitBtn = document.querySelector('#submit-btn');
     submitBtn.disabled = false;
-
-    //fetch(`http://127.0.0.1:5000/make_flood_prediction?zip=${zip}&lat=${lat}&long=${long}`).then((val)=>{
-    //  console.log(val.json().then((value)=>{
-    //    contentDiv.style.display = "none";
-    //    resultsDiv.style.display = "block";
-    //    results.innerHTML = JSON.stringify(value);
-    //    return value;
-    //  }))
-    //})
-    // http://127.0.0.1:5000/make_flood_prediction?zip=33179&lat=59.91&long=10.75
   });
 }
 

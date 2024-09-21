@@ -184,10 +184,6 @@
                 Tunnel Team</a>.</p>
     </footer>
 
-    <!--<script async-->
-    <!--    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrx8wK6-zu7qePHwFpUEfbyU0Ib74jFqI&loading=async&libraries=places&callback=initAutocomplete"></script>-->
-    <!--<script async src="{{url_for('static',filename='javascript/script.js')}}"></script>-->
-
     <script>
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -197,7 +193,7 @@
             const lng = urlParams.get('lng');
             const zip = urlParams.get('zip');
 
-            console.log({lat, lng});
+            //console.log({lat, lng});
             fetch(`http://localhost:5000/make_flood_prediction?zip=${zip}&lat=${lat}&long=${lng}`).then((val) => {
                 val.json().then((value) => {
 
@@ -236,7 +232,7 @@
                     const precipitationValue = document.querySelector('#precipitation-value');
                     precipitationValue.textContent = precipitation + ' inches (Past 7 days)';
 
-                    console.log({...value.data});
+                    //console.log({...value.data});
                     loader.classList.add('hidden');
                     mainContent.classList.remove('hidden');
                 })

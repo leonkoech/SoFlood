@@ -37,18 +37,19 @@ run `npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watc
 run `python app.py` or `flask run` on the second terminal
 
 ## Usage
-
+Enter your address and the flood results will be displayed on a seperate page.
 
 ## Meet-The-Team
 The team members that contributed to this project are: 
 
-![](./static/images/Leon.png) `Leon Kipkoech`
+![Leon Kipkoech](./static/images/Leon.png) [`Leon Kipkoech`](https://github.com/leonkoech)
 
-![](./static/images/Elvis.png) `Elvis Hernandez `
+![Elvis Hernandez](./static/images/Elvis.png) [`Elvis Hernandez`](https://github.com/ElvisHernandez)
 
-![](./static/images/Henrique.png) `Henrique Lopes `
+![Henrique Lopes](./static/images/Henrique.png) [`Henrique Lopes`](https://github.com/hcmlopes)
 
-![](./static/images/Tina.png) `Tina Humphrey`
+![Tina Humphrey](./static/images/Tina.png) [`Tina Humphrey`](https://github.com/humphreyt12)
+
 
 ## License 
 This project uses the ISC License.

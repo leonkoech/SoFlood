@@ -1,0 +1,18 @@
+{
+  "name": "soflood",
+  "version": "1.0.0",
+  "description": "## Table of Contents  * [Description](#Description)  * [User-Story](#User-Story)  * [Website-Link](#Website-Link)  * [Presentation](#Presentation)  * [Installation](#Installation)  * [Usage](#Usage)  * [Collaboration](#Collaboration)  * [License](#License)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9"
+  }
+}

@@ -42,7 +42,7 @@ Enter your address and the flood results will be displayed on a seperate page.
 ## Meet-The-Team
 The team members that contributed to this project are: 
 
-![Leon Kipkoech](./static/images/Leon.png) [`Leon Kipkoech`](https://github.com/leonkoech)
+![Leon Kipkoech](./static/images/Leon.png) [`Leon Kipkoech`](https://github.com/leonkoech){:target="_blank"}
 
 ![Elvis Hernandez](./static/images/Elvis.png) [`Elvis Hernandez`](https://github.com/ElvisHernandez)
 

@@ -3,11 +3,11 @@
 ## Table of Contents
  * [Description](#Description)
  * [User-Story](#User-Story)
- * [Website-Link](#Website-Link)
+ * [Demo-Screenshots](#Demo-Screenshots)
  * [Presentation](#Presentation)
  * [Installation](#Installation)
  * [Usage](#Usage)
- * [Collaboration](#Collaboration)
+ * [Meet-The-Team](#Meet-The-Team)
  * [License](#License)
 
 ## Description
@@ -18,7 +18,8 @@ Welcome to So-Flood, a website that allows users to search for flood risk in the
 As a homeowner, I want to be able to search for flood risk in my area so that I can be informed about the risk and take steps to protect myself and my property. I also want to be able to view resources for preparing for and recovering from floods so that I can be prepared in case of an emergency. In addition, I want to be able to share this information with my insurance company to lower my homeowner's insurance.
 
 ## Demo-Screenshots
-
+![](./static/images/home.png)
+![](./static/images/results.png)
 
 ## Presentation
 Click the link below to view our presentation:
@@ -38,8 +39,16 @@ run `python app.py` or `flask run` on the second terminal
 ## Usage
 
 
-## Collaboration 
-The contibutors to this project are: Leon Kipkoech, Elvis Hernandez, Henrique Lopes, and Tina Humphrey.
+## Meet-The-Team
+The team members that contributed to this project are: 
+
+![](./static/images/Leon.png) `Leon Kipkoech`
+
+![](./static/images/Elvis.png) `Elvis Hernandez `
+
+![](./static/images/Henrique.png) `Henrique Lopes `
+
+![](./static/images/Tina.png) `Tina Humphrey`
 
 ## License 
 This project uses the ISC License.

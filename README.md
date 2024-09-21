@@ -21,7 +21,8 @@ As a homeowner, I want to be able to search for flood risk in my area so that I 
 Click the link below to view the website:
 
 ## Presentation
-Click the link below to view our presentaion:
+Click the link below to view our presentation:
+https://docs.google.com/presentation/d/17Gpmr5IV0yxHcELfcA5SLAnZl5rc2ipKj6ejtLbasEs/edit?usp=sharing
 
 ## Installation
 

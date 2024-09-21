@@ -58,83 +58,119 @@
 
     <!-- Main Content Section -->
     <main id="main-content" class="mx-[3rem] hidden">
-        <div class="flex justify-center gap-[2rem] mt-[2rem]">
-            <div class="stats shadow w-[25%]">
-                <div class="stat">
-                    <div class="stat-figure text-secondary">
-                        <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"-->
-                        <!--    class="inline-block h-8 w-8 stroke-current">-->
-                        <!--    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
-                        <!--        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
-                        <!--</svg>-->
-                    </div>
-                    <div class="stat-title">FEMA Score</div>
-                    <div id="fema-prediction-value" class="stat-value text-center"></div>
+        <div class="flex justify-center gap-[2rem] mt-[2rem] max-w-[50%] mx-auto">
+            <!--<div class="stats shadow w-[25%] p-4">-->
+            <div class="stat">
+                <div class="stat-figure text-secondary">
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"-->
+                    <!--    class="inline-block h-8 w-8 stroke-current">-->
+                    <!--    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+                    <!--        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
+                    <!--</svg>-->
                 </div>
+                <div class="stat-title text-[24px] text-center">FEMA Score</div>
+                <div id="fema-prediction-value" class="stat-value text-center text-[64px] p-8"></div>
             </div>
-            <div class="stats shadow w-[25%]">
-                <div class="stat">
-                    <div class="stat-figure text-secondary">
-                        <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"-->
-                        <!--    class="inline-block h-8 w-8 stroke-current">-->
-                        <!--    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
-                        <!--        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
-                        <!--</svg>-->
-                    </div>
-                    <div class="stat-title">Carpal Tunnel Score</div>
-                    <div id="carpal-tunnel-prediction-value" class="stat-value text-center"></div>
+            <!--</div>-->
+            <!--<div class="stats shadow w-[25%] p-4">-->
+            <div class="stat">
+                <div class="stat-figure text-secondary">
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"-->
+                    <!--    class="inline-block h-8 w-8 stroke-current">-->
+                    <!--    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+                    <!--        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
+                    <!--</svg>-->
                 </div>
+                <div class="stat-title text-[24px] text-center">SoFlood Score</div>
+                <div id="carpal-tunnel-prediction-value" class="stat-value text-center text-[64px] p-8"></div>
             </div>
         </div>
+        <!--</div>-->
 
         <div class="flex items-center gap-[1rem] flex-col">
             <div class="collapse collapse-arrow bg-base-200 mt-[3rem] w-[50%]">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Average Rain</div>
+                <div class="collapse-title text-2xl font-medium">Average Rain</div>
                 <div class="collapse-content">
-                    <p id="average-rain-value"></p>
+                    <p id="average-rain-value" class="text-lg font-semibold"></p>
+                    <p class="mt-[1rem] text-slate-500">
+                        Average rain can cause flooding when the ground becomes saturated, preventing further absorption
+                        and causing water to run off into rivers and drainage systems. In urban areas with limited
+                        drainage, even moderate rainfall can lead to flooding due to the inability of surfaces to absorb
+                        water.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 w-[50%]">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Average Soil Moisture</div>
+                <div class="collapse-title text-2xl font-medium">Average Soil Moisture</div>
                 <div class="collapse-content">
-                    <p id="average-soil-moisture-value"></p>
+                    <p id="average-soil-moisture-value" class="text-lg font-semibold"></p>
+                    <p class="mt-[1rem] text-slate-500">
+                        Average soil moisture can impact flooding by reducing the ground's ability to absorb additional
+                        rain. When soil is already saturated, even small amounts of rainfall can lead to runoff,
+                        increasing the likelihood of floods.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 w-[50%]">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Average Water Proximity</div>
+                <div class="collapse-title text-2xl font-medium">Average Water Proximity</div>
                 <div class="collapse-content">
-                    <p id="average-water-proximity-value"></p>
+                    <p id="average-water-proximity-value" class="text-lg font-semibold"></p>
+                    <p class="mt-[1rem] text-slate-500">
+                        Average water proximity increases flooding risk, as areas near rivers, lakes, or coasts are more
+                        prone to water overflow during rainfall or rising water levels. Closer proximity means less
+                        capacity to absorb runoff, leading to quicker flooding.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 w-[50%]">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Elevation</div>
+                <div class="collapse-title text-2xl font-medium">Elevation</div>
                 <div class="collapse-content">
-                    <p id="elevation-value"></p>
+                    <p id="elevation-value" class="text-lg font-semibold"></p>
+                    <p class="mt-[1rem] text-slate-500">
+                        Higher elevation reduces the risk of flooding, as water flows downhill and accumulates in lower
+                        areas. Conversely, low-lying areas are more prone to floodwaters pooling during heavy rainfall.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 w-[50%]">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Max Rain</div>
-                <div class="collapse-content">
+                <div class="collapse-title text-2xl font-medium">Max Rain</div>
+                <div class="collapse-content" class="text-lg font-semibold">
                     <p id="max-rain-value"></p>
+                    <p class="mt-[1rem] text-slate-500">
+                        Max rain refers to extreme rainfall in a short period, which overwhelms drainage systems,
+                        rapidly saturates soil, and leads to flash flooding. The sudden volume of water exceeds the
+                        ground's absorption capacity, causing immediate runoff and localized flooding.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 w-[50%]">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Population</div>
-                <div class="collapse-content">
+                <div class="collapse-title text-2xl font-medium">Population</div>
+                <div class="collapse-content" class="text-lg font-semibold">
                     <p id="population-value"></p>
+                    <p class="mt-[1rem] text-slate-500">
+                        Higher population density can increase flooding risk, as more impermeable surfaces (like roads
+                        and buildings) prevent water absorption and strain drainage systems. Additionally, larger
+                        populations often lead to greater infrastructure pressure, making flood management more
+                        challenging.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 w-[50%]">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Precipitation</div>
+                <div class="collapse-title text-2xl font-medium">Precipitation</div>
                 <div class="collapse-content">
-                    <p id="precipitation-value"></p>
+                    <p id="precipitation-value" class="text-lg font-semibold"></p>
+                    <p class="mt-[1rem] text-slate-500">
+                        Precipitation contributes to flooding when rain accumulates faster than the ground or drainage
+                        systems can absorb. Prolonged or intense precipitation increases surface runoff, elevating flood
+                        risks, especially in areas with poor drainage or saturated soil.
+                    </p>
                 </div>
             </div>
         </div>
@@ -143,7 +179,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="mt-[2rem]">
         <p>&copy; 2024 SoFlood. Made with ❤️ by the <a href="https://github.com/your-repo-link" target="_blank">Carpal
                 Tunnel Team</a>.</p>
     </footer>

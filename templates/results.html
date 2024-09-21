@@ -45,35 +45,14 @@
             style="float: left; margin-top: 20px; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
     </a>
 
-    <!-- Main Content Section -->
+    <!-- Main Section -->
     <main>
         <section class="flex items-center justify-center w-full">
             <div class="flex items-center w-full max-w-6xl mx-auto">
-                <!-- The Search Bar -->
-                <div class="w-full max-w-xl text-center mr-8"> <!-- Adjusted margin-right -->
-                    <h1 class="text-4xl mb-8">Search for Your Flood Zone</h1>
-                    <div class="relative mt-16"> <!-- Added margin-top to push down -->
-                        <label for="search" class="sr-only">Search</label>
-                        <input type="text" id="search" placeholder="Enter your address..."
-                            class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm" />
-                        <span class="absolute inset-y-0 right-0 grid w-10 place-content-center">
-                            <button type="button" class="text-gray-600 hover:text-gray-700">
-                                <span class="sr-only">Search</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                                </svg>
-                            </button>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- The Florida Map -->
-                <div class="">
-                    <img class="w-full" src="{{ url_for('static', filename='images/floridamap.png') }}" alt="Florida Map"
-                        style="width: 500px; border: 0;" allowfullscreen="" loading="lazy">
-                </div>
+            <div class= "w-full max-w-xl text-center">
+                <h1 class="text-4xl mb-8">Flood Data Results</h1>
+            </div>
+               
             </div>
         </section>
     </main>
@@ -90,4 +69,3 @@
 </body>
 
 </html>
-

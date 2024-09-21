@@ -2,6 +2,7 @@ from flask import Flask, jsonify, render_template, request
 import api  # Importing the file `api.py`
 from api_dev import geocode_bp
 from api_dev_2 import make_prediction
+from flask_cors import CORS
 
 app = Flask(__name__)
 
@@ -34,6 +35,13 @@ def get_test():
 
 # Register the Blueprint with the app
 app.register_blueprint(geocode_bp)
+CORS(
+        app,
+        resources={r"/*": {"origins": "*"}},
+        allow_headers=["Authorization", "Content-Type"],
+        methods=["GET", "POST", "PATCH", "DELETE"],
+        max_age=86400
+        )
 
 if __name__ == '__main__':
     app.run(debug=True)

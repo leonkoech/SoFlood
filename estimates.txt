@@ -73,7 +73,69 @@ ZIP_CODE PO_NAME STATE count_prop avg_risk_s avg_risk_1 avg_risk_f avg_risk_2 av
 33196 Miami FL 13,899 2.63 5.07 7.01 5.49 3.28 1.92
 46959 Miami IN 200 2.11 5.33 6.84 5.47 5.78 1.93
 33199 Miami FL 0 0.00 0.00 0.00 0.00 0.00 0.00
-65344 Miami MO 744 3.47 8.14 8.43 8.14 7.71 1.47
-74354 Miami OK 10,623 1.76 5.76 7.36 5.81 3.53 1.14
-79059 Miami TX 1,062 1.94 6.83 7.56 6.88 0.00 1.96
-85539 Miami AZ 3,247 3.36 7.63 8.16 7.76 6.54 2.56
+33426 Boynton_Beach FL 3.86 4.77 5.91 4.89 5.45 3.84
+33435 Boynton_Beach FL 3.42 6.12 7.01 6.40 7.32 2.74
+33436 Boynton_Beach FL 2.59 4.78 6.27 5.05 6.39 2.57
+33437 Boynton_Beach FL 2.98 4.93 6.21 5.17 3.69 2.97
+33472 Boynton_Beach FL 3.17 4.96 6.32 5.26 3.62 3.17
+33473 Boynton_Beach FL 3.15 5.17 6.24 5.38 7.00 2.98
+33060 Pompano_Beach FL 3.68 5.11 6.32 5.44 5.13 3.24
+33062 Pompano_Beach FL 5.53 5.97 7.08 6.23 6.05 4.82
+33063 Pompano_Beach FL 2.28 4.55 6.22 4.89 3.20 2.23
+33064 Pompano_Beach FL 3.61 6.04 6.98 6.33 5.60 3.08
+33066 Pompano_each FL 1.70 4.87 6.39 5.15 1.96 1.67
+33067 Pompano_Beach FL 2.67 4.72 6.30 5.03 3.04 2.47
+33068 Pompano_Beach FL 2.63 4.46 6.14 4.76 3.88 2.40
+33069 Pompano_Beach FL 3.30 5.29 6.48 5.53 5.30 2.57
+33073 Pompano_Beach FL 2.51 4.49 6.23 4.80 3.83 2.42
+33076 Pompano_Beach FL 3.41 5.48 6.84 5.82 5.53 2.66
+33065 Coral_Springs FL 3.00 4.63 6.23 4.90 3.32 2.97
+33071 Coral_Springs FL 3.36 4.77 6.20 5.01 3.60 3.34
+33304 Fort_Lauderdale FL 3.90 4.78 6.65 5.83 5.31 2.55
+33305 Fort_Lauderdale FL 3.78 4.55 6.24 5.17 4.78 2.82
+33306 Fort_Lauderdale FL 4.27 5.07 6.28 5.37 5.66 2.88
+33308 Fort_Lauderdale FL 2.90 4.22 6.28 4.79 4.19 2.44
+33309 Fort_Lauderdale FL 3.03 5.03 6.31 5.26 4.62 2.47
+33311 Fort_Lauderdale FL 3.04 4.91 6.25 5.28 4.66 2.50
+33312 Fort_Lauderdale FL 2.82 4.91 6.39 5.27 4.59 2.22
+33313 Fort_Lauderdale FL 5 48 5 81 6 37 5 87 5 59 5 48
+33312 Fort_Lauderdale FL 2.82 4.91 6.39 5.27 4.59 2.22
+33313 Fort_Lauderdale FL 5.48 5.81 6.37 5.87 5.59 5.48
+33314 Fort_Lauderdale FL 2.76 5.35 6.49 5.59 4.63 2.00
+33315 Fort_Lauderdale FL 3.91 4.67 6.32 5.09 4.84 2.87
+33316 Fort_Lauderdale FL 5.50 6.26 7.38 6.70 6.56 4.01
+33317 Fort_Lauderdale FL 4.75 6.04 6.70 6.18 5.70 4.64
+33319 Fort_Lauderdale FL 3.16 5.01 6.35 5.24 4.44 2.49
+33321 Fort_Lauderdale FL 2.35 4.41 6.18 4.76 2.58 2.26
+33322 Fort_Lauderdale FL 3.29 5.61 7.02 5.98 4.36 3.27
+33323 Fort_Lauderdale FL 2.76 4.67 6.36 5.10 3.91 2.47
+33325 Fort_Lauderdale FL 2.95 5.19 6.35 5.42 3.47 2.68
+33326 Fort_Lauderdale FL 2.38 5.10 6.37 5.37 2.86 2.32
+33327 Fort_Lauderdale FL 2.36 5.35 6.37 5.63 4.08 2.28
+33328 Fort_Lauderdale FL 2.53 4.81 6.62 5.16 4.40 2.20
+33330 Fort_Lauderdale FL 2.33 5.23 6.40 5.52 3.26 1.93
+33331 Fort_Lauderdale FL 2.12 5.37 6.65 5.68 2.48 1.98
+33332 Fort_Lauderdale FL 2.39 4.92 6.52 5.08 3.44 1.80
+33334 Fort_Lauderdale FL 3.64 4.97 6.19 5.22 5.36 3.09
+33351 Fort_Lauderdale FL 2.39 4.67 6.21 4.98 2.78 2.36
+33394 Fort_Lauderdale FL 0.00 0.00 0.00 0.00 0.00 0.00
+33441 Deerfield_Beach FL 4.01 5.75 6.86 6.15 5.08 3.58
+33442 Deerfield_Beach FL 1.97 4.84 6.45 5.17 3.20 1.79
+33388 Plantation FL 0.00 0.00 0.00 0.00 0.00 0.00
+33401 West_Palm_Beach FL 2.37 5.37 6.71 5.64 6.73 2.09
+33403 West_Palm_Beach FL 2.33 4.83 6.40 5.44 4.79 2.16
+33404 West_Palm_Beach FL 3.46 5.49 6.94 5.88 7.57 3.05
+33405 West_Palm_Beach FL 3.06 5.81 6.93 6.26 7.85 2.67
+33406 West_Palm_Beach FL 2.41 4.57 6.34 4.91 5.99 2.12
+33407 West_Palm_Beach FL 3.05 5.58 6.84 5.98 7.46 2.94
+33408 North_Palm_Beach FL 3.65 5.96 6.72 6.24 6.62 3.27
+33411 West_Palm_Beach FL 2.49 4.44 6.56 4.87 4.59 2.34
+33412 West_Palm_Beach FL 3.29 5.60 6.75 5.88 4.96 3.05
+33413 West_Palm_Beach FL 3.64 5.15 6.61 5.46 5.29 3.36
+33414 Wellington FL 3.79 5.11 6.35 5.34 5.34 3.74
+33415 West_Palm_Beach FL 2.46 4.32 6.21 4.61 5.31 2.27
+33417 West_Palm_Beach FL 3.16 5.02 6.45 5.25 5.50 2.99
+33418 Palm_Beach_Gardens FL 4.02 5.53 6.62 5.78 4.50 3.99
+
+
+

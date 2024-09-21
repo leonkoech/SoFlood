@@ -4,7 +4,8 @@
   "description": "## Table of Contents  * [Description](#Description)  * [User-Story](#User-Story)  * [Website-Link](#Website-Link)  * [Presentation](#Presentation)  * [Installation](#Installation)  * [Usage](#Usage)  * [Collaboration](#Collaboration)  * [License](#License)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "tailwindcss": "^3.4.12"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.9"
+    "@tailwindcss/forms": "^0.5.9",
+    "daisyui": "^4.12.10"
   }
 }

@@ -30,3 +30,31 @@ def get_geocode_data():
 
     return jsonify(response), status_code
 
+@geocode_bp.route('/elevation', methods=['GET'])
+def get_elevation_data():
+
+    response = {
+        "error": None, 
+        "data": None
+    }
+    status_code = 200
+
+    try:
+        lat = request.args.get('lat')
+        lng = request.args.get('lng')
+        elevation = requests.get(f'https://maps.googleapis.com/maps/api/elevation/json?locations={lat}%2C{lng}&key={GEOCODING_API_KEY}')
+
+        results = elevation.json()["results"]
+
+        if results:
+            # The elevation of the location in meters.
+            elevation = results[0]["elevation"]
+            response['data'] = { "elevation_in_meters": elevation }
+    
+    except Exception as e:
+        response["error"] = e
+        status_code = 500
+
+
+    return jsonify(response), status_code
+

@@ -94,13 +94,12 @@ def get_archive_data (latitude, longitude):
    avg_soil_moisture_value = statistics.mean(values["soil_moisture_7_to_28cm"])
    avg_water_prox_value = statistics.mean(water_prox_values["water_proximity"])
 
-   print({
+   return {
       "max_rain": max_rain_value,
       "avg_rain": avg_rain_value,
       "avg_soil_moisture": avg_soil_moisture_value,
       "avg_water_prox": avg_water_prox_value
-      })
-  #  print(water_prox_values)
+      }
 
 def get_max_value(data):
   a = np.array(data)

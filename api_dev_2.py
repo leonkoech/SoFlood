@@ -1,3 +1,6 @@
+import requests
+import os
+from dotenv import load_dotenv, dotenv_values 
 import numpy as np
 import statistics
 import openmeteo_requests
@@ -5,6 +8,8 @@ import openmeteo_requests
 import requests_cache
 import pandas as pd
 from retry_requests import retry
+
+load_dotenv()
 
 def get_water_proximity_data(latitude, longitude):
   # Setup the Open-Meteo API client with cache and retry on error
@@ -101,9 +106,22 @@ def get_archive_data (latitude, longitude):
       "avg_water_prox": avg_water_prox_value
       }
 
+
+def get_population_by_zipcode(zipcode): 
+  url = f"https://global.metadapi.com/zipc/v1/zipcodes/{zipcode}"
+  headers = {
+    "Accept": "application/json",
+    "Ocp-Apim-Subscription-Key": os.getenv("OCP_APIM_SUBSCRIPTION_KEY")
+  }
+  response = requests.get(url, headers=headers)
+  zipCodeStatistics = response.json()['data']['zipCodeStatistics']
+
+  print(zipCodeStatistics[-1]['totalPopulation'])
+  # get the last item in the data array
+  return zipCodeStatistics[-1]['totalPopulation']
+
 def get_max_value(data):
   a = np.array(data)
   return data[a.argmax()]
 
-if __name__ == '__main__':
-    get_archive_data(59.91, 10.75)
+get_population_by_zipcode(33426)

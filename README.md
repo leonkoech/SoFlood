@@ -11,7 +11,6 @@
  * [License](#License)
 
 ## Description
-
 Welcome to So-Flood, a website that allows users to search for flood risk in their area. Users can search by zip code or address and will be presented with data from various sources including FEMA to get an accurate flood risk score. So-Flood is a valuable tool for anyone who wants to be informed about flood risk in their area and take steps to protect themselves and their property, and use it as a resource to present it to their insurance companies to lower their home owner's' insurance. 
 
 ## User Story
@@ -22,6 +21,7 @@ As a homeowner, I want to be able to search for flood risk in my area so that I 
 ![](./static/images/results.png)
 
 ## Presentation
+Presented by The Carpal Tunnel Team! 
 Click the link below to view our presentation:
 https://docs.google.com/presentation/d/17Gpmr5IV0yxHcELfcA5SLAnZl5rc2ipKj6ejtLbasEs/edit?usp=sharing
 
@@ -42,13 +42,13 @@ Enter your address and the flood results will be displayed on a seperate page.
 ## Meet-The-Team
 The team members that contributed to this project are: 
 
-![Leon Kipkoech](./static/images/Leon.png) [`Leon Kipkoech`](https://github.com/leonkoech)
+![Leon Kipkoech](./static/images/Leon.png) [`Leon Kipkoech - Research + ML`](https://github.com/leonkoech)
 
-![Elvis Hernandez](./static/images/Elvis.png) [`Elvis Hernandez`](https://github.com/ElvisHernandez)
+![Elvis Hernandez](./static/images/Elvis.png) [`Elvis Hernandez - API + Frontend`](https://github.com/ElvisHernandez)
 
-![Henrique Lopes](./static/images/Henrique.png) [`Henrique Lopes`](https://github.com/hcmlopes)
+![Henrique Lopes](./static/images/Henrique.png) [`Henrique Lopes - API + Frontend`](https://github.com/hcmlopes)
 
-![Tina Humphrey](./static/images/Tina.png) [`Tina Humphrey`](https://github.com/humphreyt12)
+![Tina Humphrey](./static/images/Tina.png) [`Tina Humphrey - UI/UX + Frontend`](https://github.com/humphreyt12)
 
 ## License 
 This project uses the ISC License.

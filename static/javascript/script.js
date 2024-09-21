@@ -7,7 +7,7 @@ function initAutocomplete() {
   };
   const searchBox = new google.maps.places.Autocomplete(input, options);
 
-  google.maps.event.addListener(searchBox, 'place_changed', function () {
+  google.maps.event.addListener(searchBox, 'place_changed', function() {
     const place = searchBox.getPlace();
     console.log(place.geometry.location.lat());
     console.log(place.geometry.location.lng());

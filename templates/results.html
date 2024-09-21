@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
+
     <style>
         /* Ensure the body takes full height and uses flexbox */
         html,
         body {
             font-family: "Playfair Display", serif;
             height: 100vh;
-            margin: 0;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -52,8 +52,53 @@
     </a>
 
     <!-- Main Content Section -->
-    <main>
-        <h2>Welcome to Results Page</h2>
+    <main class="mx-[3rem]">
+        <div class="flex justify-center gap-[2rem] mt-[2rem]">
+            <div class="stats shadow w-[25%]">
+                <div class="stat">
+                    <div class="stat-figure text-secondary">
+                        <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"-->
+                        <!--    class="inline-block h-8 w-8 stroke-current">-->
+                        <!--    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+                        <!--        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
+                        <!--</svg>-->
+                    </div>
+                    <div class="stat-title">FEMA Score</div>
+                    <div class="stat-value text-center">7</div>
+                </div>
+            </div>
+            <div class="stats shadow w-[25%]">
+                <div class="stat">
+                    <div class="stat-figure text-secondary">
+                        <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"-->
+                        <!--    class="inline-block h-8 w-8 stroke-current">-->
+                        <!--    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+                        <!--        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>-->
+                        <!--</svg>-->
+                    </div>
+                    <div class="stat-title">Carpal Tunnel Score</div>
+                    <div class="stat-value text-center">4</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-[1rem] flex-col">
+            <div class="collapse collapse-arrow bg-base-200 mt-[3rem] w-[50%]">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">hello</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 w-[50%]">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer -->
@@ -62,9 +107,9 @@
                 Tunnel Team</a>.</p>
     </footer>
 
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrx8wK6-zu7qePHwFpUEfbyU0Ib74jFqI&loading=async&libraries=places&callback=initAutocomplete"></script>
-    <script async src="{{url_for('static',filename='javascript/script.js')}}"></script>
+    <!--<script async-->
+    <!--    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrx8wK6-zu7qePHwFpUEfbyU0Ib74jFqI&loading=async&libraries=places&callback=initAutocomplete"></script>-->
+    <!--<script async src="{{url_for('static',filename='javascript/script.js')}}"></script>-->
 
 </body>
 

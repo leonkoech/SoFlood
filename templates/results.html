@@ -111,6 +111,23 @@
     <!--    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrx8wK6-zu7qePHwFpUEfbyU0Ib74jFqI&loading=async&libraries=places&callback=initAutocomplete"></script>-->
     <!--<script async src="{{url_for('static',filename='javascript/script.js')}}"></script>-->
 
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+
+            const lat = urlParams.get('lat');
+            const lng = urlParams.get('lng');
+            const zip = urlParams.get('zip');
+
+            console.log({lat, lng});
+            fetch(`http://localhost:5000/make_flood_prediction?zip=${zip}&lat=${lat}&long=${lng}`).then((val) => {
+                val.json().then((value) => {
+                    console.log({value});
+                })
+            })
+        });
+    </script>
 </body>
 
 </html>

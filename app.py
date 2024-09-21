@@ -1,7 +1,7 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
 import api  # Importing the file `api.py`
-import api_dev_2
 from api_dev import geocode_bp
+from api_dev_2 import make_prediction
 
 app = Flask(__name__)
 
@@ -15,12 +15,19 @@ def results():
 
 # this is an example of a get request
 #  go to this link to see: http://127.0.0.1:5000/get_test
-@app.route('/get_test',  methods=['GET'])
+@app.route('/make_flood_prediction',  methods=['GET'])
 def get_test():
+    lat = request.args.get('lat')
+    long = request.args.get('long')
+    zip = request.args.get('zip')
+
+    print (lat, long, zip)
     try:
-        data = {"message": "this is my data"}
+        results = make_prediction(zip, lat,long)
+        data = {"data": results}
         return jsonify(data), 200
     except Exception as e:
+        print(e)
         error_message = {"error": str(e)}
         return jsonify(error_message), 500
 

@@ -50,6 +50,5 @@ The team members that contributed to this project are:
 
 ![Tina Humphrey](./static/images/Tina.png) [`Tina Humphrey`](https://github.com/humphreyt12)
 
-
 ## License 
 This project uses the ISC License.
